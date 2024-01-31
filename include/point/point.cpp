@@ -30,7 +30,15 @@ ostream &operator<<(ostream &os, const Point2d &point) {
   return os << static_cast<string>(point);
 }
 
-double Point2d::distance(const Point2d &point) {
+double Point2d::distance(const Point2d &point) const {
   std::cout << *this << '\n' << point << '\n';
   return sqrt(pow(x - point.x, 2) + pow(y - point.y, 2));
 }
+
+Point2d Point2d::operator*(double number) { return {x * number, y * number}; }
+
+double Point2d::operator*(const Point2d &point) {
+  return x * point.x + y * point.y;
+}
+
+Point2d zero() { return Point2d{}; }

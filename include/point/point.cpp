@@ -20,6 +20,12 @@ Point2d::Point2d(std::initializer_list<double> list) {
     x = *list.begin(), y = *(list.begin() + 1);
 }
 
+Point2d &Point2d::operator=(const Point2d &point) {
+  x = point.x;
+  y = point.y;
+  return *this;
+}
+
 Point2d::~Point2d() {}
 
 Point2d::operator string() const {
@@ -35,10 +41,21 @@ double Point2d::distance(const Point2d &point) const {
   return sqrt(pow(x - point.x, 2) + pow(y - point.y, 2));
 }
 
-Point2d Point2d::operator*(double number) { return {x * number, y * number}; }
+Point2d Point2d::operator*(double number) const {
+  return {x * number, y * number};
+}
 
-double Point2d::operator*(const Point2d &point) {
+double Point2d::operator*(const Point2d &point) const {
   return x * point.x + y * point.y;
+}
+
+bool Point2d::operator==(const Point2d &point) const {
+  return (x - point.x < x * 1.0e-10) && (y - point.y < y * 1.0e-10);
+}
+
+bool Point2d::operator<(const Point2d &point) const {
+  Point2d zero = Point2d::zero();
+  return distance(zero) < point.distance(zero);
 }
 
 Point2d zero() { return Point2d{}; }

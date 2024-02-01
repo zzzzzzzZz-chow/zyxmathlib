@@ -1,11 +1,6 @@
 #include "point.hpp"
-#include <iostream>
 int main() {
   Point2d a = {1, 2};
-  Point2d b = {1, 5};
-  double c = a.distance(b);
-  std::cout << c << std::endl;
-  double d = a * b;
-  std::cout << d << '\n';
-  std::cout << a * 5 << '\n';
+  Point2d b = {4, 6};
+  std::cout << a.distance(b) << std ::endl;
 }

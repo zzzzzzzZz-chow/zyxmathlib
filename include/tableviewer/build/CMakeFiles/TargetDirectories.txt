@@ -1,0 +1,3 @@
+/home/zyx/zyxmathlib/include/tableviewer/build/CMakeFiles/table_viewer.dir
+/home/zyx/zyxmathlib/include/tableviewer/build/CMakeFiles/edit_cache.dir
+/home/zyx/zyxmathlib/include/tableviewer/build/CMakeFiles/rebuild_cache.dir

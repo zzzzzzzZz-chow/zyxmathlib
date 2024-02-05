@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/zyx/zyxmathlib/include/tableviewer/build",
+  "command": "/usr/sbin/c++   -std=c++20 -o CMakeFiles/table_viewer.dir/table_viewer.cpp.o -c /home/zyx/zyxmathlib/include/tableviewer/table_viewer.cpp",
+  "file": "/home/zyx/zyxmathlib/include/tableviewer/table_viewer.cpp",
+  "output": "CMakeFiles/table_viewer.dir/table_viewer.cpp.o"
+},
+{
+  "directory": "/home/zyx/zyxmathlib/include/tableviewer/build",
+  "command": "/usr/sbin/c++   -std=c++20 -o CMakeFiles/table_viewer.dir/test.cpp.o -c /home/zyx/zyxmathlib/include/tableviewer/test.cpp",
+  "file": "/home/zyx/zyxmathlib/include/tableviewer/test.cpp",
+  "output": "CMakeFiles/table_viewer.dir/test.cpp.o"
+}
+]
